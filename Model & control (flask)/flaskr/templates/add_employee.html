@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Employee form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <h1>form for add Employee.</h1>
+    <div>
+       <form action="{{ url_for('auth.add_employee') }}" method="post" id="addemployee">
+            <fieldset>
+                    <legend>fill form as a Employee:</legend>
+                    Employee id:<br>
+                    <input type="number" name="employeid"
+                    value="" placeholder="***"><br>
+                    First name:<br>
+                    <input type="text" name="first_name"
+                    value="" placeholder="first name"><br>
+                    Last name:<br>
+                    <input type="text" name="last_name"
+                    value="" placeholder="last name "><br>
+                    Contact number: <br>                   
+                    <input type="number" name="contact_no"
+                    value="" placeholder="Entre contact_no"><br>
+                    Address: <br>
+                    <input type="text" name="e_address"
+                    value="" placeholder="please Entre your addres"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
